@@ -82,17 +82,22 @@
     top: 100px;
     left: 25px;
     transition: all 0.5s ease-in-out;
-    background: #181818;
+    background: transparent;
     width: 16vw;
     height: auto;
     box-shadow: 2px 3px 10px #181818c4;
+    border-radius: 5px;
 }
 .nav__lu{
 list-style: none;
 border-radius: 5px;
+background-color: #181818;
 }
 .nav__menu{
-    background-color: red;
+    background-color: transparent;
+}
+.nav__li{
+    background-color: transparent;
 }
 .nav__li a {
     text-transform: center;
@@ -101,11 +106,12 @@ border-radius: 5px;
     color: #fff;
     padding: 25px 0;
     margin: auto;
-    background-color: #181818;
+    background-color: transparent;
     text-decoration: none;
     font-family: sans-serif;
     font-size: 1.5vw;
     letter-spacing: 3px;
+    border-radius: 5px;
 }
 #nerd-menu:checked ~ .nav{
     transform: rotateX(0);
@@ -177,21 +183,21 @@ border-radius: 5px;
 /*cards*/
 .conteiner-card{
     width: 100%;
-    height: 430px;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 100px auto;
+    margin: 50px auto;
 }
 .conteiner-card .card{
     background-color:transparent;
-    width: 330px;
+    width: 250px;
     height: 430px;
     border-radius: 8px;
     border: 2px solid #181818;
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     overflow: hidden;
-    margin: 50px;
+    margin: 10px 30px;
     text-align: center;
     transition: all 0.25s;
     background-color: #181818;
@@ -245,14 +251,15 @@ font-size: 30px;
     position: fixed;
     right: 5%;
     bottom: 5%;
-    width: 100px;
-    height: 100px;
-    background-color: #25D366;
+    width: 75px;
+    height: 75px;
+    background-color: #181818;
     border-radius: 50%;
+    transition: background-color 400ms;
 }
 .fa-whatsapp{
     position: relative;
-    font-size:75px ;
+    font-size:50px ;
     color: #fff;
     background-color:transparent;
     align-content: center;
@@ -265,4 +272,14 @@ font-size: 30px;
     width: 100px;
     height: 100px;
     background-color: transparent;
+}
+/*footer*/
+footer{
+    display: block;
+    background-color: #181818;
+    height: 60px;
+    width: 100%;
+}
+.wppa:hover > .wpp{
+    background-color: #25D366;
 }
